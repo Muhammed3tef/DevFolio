@@ -1,0 +1,281 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+:root{
+  --main-color:#0078FF;
+  --pragraph-color:#4E4E4E;
+}
+html{
+  scroll-behavior: smooth;
+}
+.back-ground{
+   background-image:linear-gradient(to right,rgba(0, 0, 0, 0.514) 50% , rgba(0, 0, 0, 0.514) 45%), url(../picture/hero-bg.jpg);
+   background-attachment:fixed;
+   background-position: center;
+   background-size: cover;
+}
+.modify-background{
+  background-color:#000000 ;
+  z-index: 1;
+}
+.modfiy-link ul li a::before{
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width .4s;
+}
+.modfiy-link ul li a:hover::before{
+  width: 90%;
+}
+.modfiy-link ul li a.home-select::before{
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 90%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+.about-me{
+  margin-bottom: 100%;
+
+}
+.back-ground .morgan-name{
+  position: relative;
+  top: 40%;
+  font-size: 55px;
+}
+.back-ground h2 {
+  margin-bottom: -15px !important;
+}
+.about-me .container{
+  background-color: #F5F5F5;
+}
+.container .row{
+  background-color: #fff;
+}
+.container .row .progress-modfiy{
+  width: 85%;
+}
+.container .row .progress-modfiy-2{
+  width: 90%;
+}
+.container .row .progress-height{
+  height: 10px;
+  margin-bottom: 1rem;
+}
+.container .row .item-about .under-border::before{
+  content: "";
+  width: 100px;
+  height: 4px;
+  position: absolute;
+  background-color: var(--main-color);
+  bottom: -9px;
+  left: 0;
+}
+.container .row .item-row .inner-item p{
+  color: var(--pragraph-color);
+}
+/* .container .row .item-row .inner-item{
+  margin-right: 36% !important;
+} */
+.container .row .about-content p{
+  color: #4E4E4E;
+}
+/* -------------section 3 -----------------*/
+.modfiy-services-p::before{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  bottom:-15px;
+  left: 50%;
+  background-color:var(--main-color);
+  transform: translateX(-50%);
+}
+
+
+.services .container .row .bag-modify{
+  border: 10px solid #0078FF;
+  padding: 35px;
+  transition: .4s;
+}
+.services .container .row .item-design{
+  background-color: #cfcfcf69;
+  border-radius: 5%;
+  padding: 2px;
+  box-shadow: 2px 2px 4px #ffffff09;
+}
+.services .container .row .item-design:hover .bag-modify{
+  border: 10px solid #CDE1F8;
+  background-color: #0078FF;
+  color: white;
+}
+/* .services.down-services{
+  margin-top: 100%;
+} */
+/* ---------------secion 4-------------------- */
+.works-icons{
+  height: 90vh;
+  background-image:linear-gradient(to right, rgba(0, 119, 255, 0.705) ,rgba(0, 119, 255, 0.705)) ,url(../picture/post-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.item-works{
+  position: relative;
+  top: 100%;
+}
+.modfiy-roun{
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.689);
+  color: white;
+}
+/* --------------section 5---------------- */
+.protofilo .container .row .car:hover img{
+  transform: scale(1.2);
+}
+.protofilo .container .row .car img {
+  transition: .9s ;
+  overflow: hidden;
+}
+.protofilo .container .row .item-card{
+  overflow: hidden;
+
+}
+
+.protofilo .container .row .car .modfiy-text{
+  color: #0078FF;
+}
+.move-icon{
+  position: relative;
+  left: 45%;
+}
+.item-content a{
+  color: #0078FF;
+}
+/* -----------------secion 6--------------- */
+.xavi-alonso .inner-xavi{
+  background-image:linear-gradient(to right, rgba(0, 119, 255, 0.596) ,rgba(0, 119, 255, 0.596)) , url(../picture/overlay-bg.jpg);
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.xavi-alonso .xavi-car{
+  margin-top: 10%;
+}
+/* ----------------secion 7------------ */
+.blog .travel-content .travel-ho{
+  background-color: #0078FF;
+  font-size: 13px;
+  width: fit-content;
+  padding-inline: 10px;
+}
+.blog .travel-content .travel-con a{
+  color: #000;
+  transition: .3s;
+}
+.blog .travel-content .footer .travel-ph a{
+  color: #000;
+  transition: .3s;
+}
+.blog .travel-content .footer .travel-ph a:hover{
+  color: #0078FF;
+}
+.blog .travel-content .travel-con a:hover{
+  color: #0078FF;
+}
+.blog .row >*{
+  margin-bottom: 10px;
+}
+/* ------------section 8------------------ */
+.send-message{
+  background-image:linear-gradient(to right, rgba(0, 119, 255, 0.596) ,rgba(0, 119, 255, 0.596)) , url(../picture/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.send-ele{
+  position: relative;
+  top: 20%;
+  }
+/* .send-message .send-item{
+  position: relative;
+  top: 200px;
+} */
+.carousel-indicators button{
+position: relative;
+top: 15%;
+}
+.send-message .container .row .send-item .send-content .message-us::before{
+  content: "";
+  background-color: #0078FF;
+  width: 100px;
+  height: 4px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+
+
+}
+.send-message .container .row .send-item .send-content .dend-data{
+  border-top-left-radius: 100vh;
+  border-top-right-radius: 100vh;
+  border-bottom-left-radius: 100vh;
+  border-bottom-right-radius: 100vh;
+}
+.send-message .container .row .send-item .send-content .inp-1{
+  border:2px solid #00000017 ;
+  transition: .2s;
+}
+.send-message .container .row .send-item .send-content .inp-1:focus{
+  outline: 2px solid #0078FF;
+  border: 2px solid #0077ff34;
+  box-shadow: 2px 2px 5px #0077ff50;
+}
+.send-message .container .row .send-item .send-content .inp-2{
+  background-color: #0078FF;
+  border: 3px solid transparent;
+  transition: .5s;
+  
+}
+.send-message .container .row .send-item .send-content .inp-2:hover{
+  background-color: #3393FF;
+  border: 3px solid #90A3DC;
+  
+}
+.send-message .container .row .send-item .send-content .get-1{
+  color: #0078FF;
+}
+.send-message .container .row .send-item .send-content .get-2{
+  border: 3.5px solid #0078FF;
+  transition: .4s;
+
+}
+.send-message .container .row .send-item .send-content .get-2 a{
+  color: black;
+  transition: .4s;
+}
+.send-message .container .row .send-item .send-content .get-2:hover{
+  background-color: #0078FF;
+  color: white;
+  border: 3.5px solid #90A3DC;
+
+}
+.send-message .container .row .send-item .send-content .get-2:hover a{
+  color: white;
+}
+/* ----------------------section 9------------------ */
+.design-footer{
+  background-color: #0356b6;
+  box-shadow: 10px 10px 10px #0250a8;
+}
