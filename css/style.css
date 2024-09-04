@@ -91,7 +91,15 @@ html{
 .container .row .about-content p{
   color: #4E4E4E;
 }
+/* ----------------------section 2-------------------- */
+.inner-item{
+  position: relative;
+  right: 10%;
+}
 /* -------------section 3 -----------------*/
+.services{
+  padding-top:40%;
+}
 .modfiy-services-p::before{
   content: "";
   position: absolute;
@@ -159,6 +167,11 @@ html{
 .move-icon{
   position: relative;
   left: 45%;
+  /* margin:45%; */
+}
+.remove-span{
+  /* margin: 60%; */
+  
 }
 .item-content a{
   color: #0078FF;
